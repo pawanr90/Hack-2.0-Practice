@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<title>ABCD Hosptital-Login Portal</title>
+	</head>
+	<body background="">
+	<img src="logo.png" align="right"><br>
+	<script type="text/javascript">
+	var user, password;
+	function check()
+	{
+		if(document.login.user.value=="17524"&&document.login.password.value=="abcd")
+		{
+			window.location="https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=hnBzWtMlz4vxB4D8tIgB";
+		}
+		else
+		{
+			alert ("Wrong Password or User Id");
+		}
+	}	
+	</script>
+	<H1 align="center">LOGIN</H1><br>
+	<form name="login">
+	<table align="center">
+		<tr>
+			<td>User Id:</td>
+			<td><input type="text" name="user"></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><INPUT Type="password" name="password"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td></td>
+			<td align="right"><button type="button" onclick="check()">Login</button></td>
+		</tr>	
+	</table>
+	</form>
+	</body>
+	</html>

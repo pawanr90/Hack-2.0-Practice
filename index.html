@@ -6,18 +6,25 @@
 	<body background="">
 	<img src="logo.png" align="right"><br>
 	<script type="text/javascript">
-	var user, password;
 	function check()
 	{
-		if(document.login.user.value=="17524"&&document.login.password.value=="abcd")
+		var inuser=document.login.user.value,inpass=document.login.password.value,i=0,flag=0;
+		var users = ["Pradyuman","Yashwant","Mukul","Pawan"];
+		var passwords = ["17524","17525","17521","17511"];
+		while(i<4)
 		{
-			window.location="https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=hnBzWtMlz4vxB4D8tIgB";
+			if(inuser==users[i]&&inpass==passwords[i])
+			{
+				flag=1;
+				break;
+			}
+			i++;	
 		}
+		if(flag==1)
+			window.location.href="page2.html";
 		else
-		{
 			alert ("Wrong Password or User Id");
-		}
-	}	
+	}
 	</script>
 	<H1 align="center">LOGIN</H1><br>
 	<form name="login">

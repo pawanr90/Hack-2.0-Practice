@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Detail Entry</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function dataentry()
+			{
+				
+			}
+		</script>
+		<img src="logo.png" align="right"><br>
+		<H1 align="center">Details</H1><br>
+	<form name="Patient Details" action="slip.html">
+	<table align="center">
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>Age:</td>
+			<td><input type="text" name="age"></td>
+		</tr>
+		<tr>
+			<td>Sex:</td>
+			<td><input type="radio" name="gender">Male<input type="radio" name="gender">Female</td>
+		</tr>
+		<tr>
+			<td>Problem</td>
+			<td><select name="problem">
+				<option value="100">Eyes</option>
+				<option value="101">ENT</option>
+				<option value="102">Ortho</option>
+				<option value="103">Surgen</option>
+				<option value="104">Dentist</option>
+				<option value="105">Cardiologist</option>
+				<option value="106">MD</option>
+			</select></td>
+		</tr>	
+		<tr>
+			<td></td>
+			<td align="right"><button onclick="dataentry()">Submit</button></td>
+		</tr>
+	</table>
+	</form>
+	</body>
+	</html>

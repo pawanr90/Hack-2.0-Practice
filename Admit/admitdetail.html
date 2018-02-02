@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admit</title>
+</head>
+<body background="Back.jpeg">
+<script type="text/javascript">
+	function dataentry()
+	{
+		window.location.href="page2.html";
+	}
+</script>
+<img src="logo.png" align="right" width="200" height="200">
+	<H1 align="center">Details</H1><br>
+	<form name="Patient Details">
+	<table align="center">
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>Age:</td>
+			<td><input type="text" name="age"></td>
+		</tr>
+		<tr>
+			<td>Sex:</td>
+			<td><input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female</td>
+		</tr>
+		<tr>
+			<td>Ordered by Doctor:</td>
+			<td><select name="doctor">
+				<option value="100">Eyes-Dr. Ramesh</option>
+				<option value="101">ENT-Dr. Anuj</option>
+				<option value="102">Ortho-Dr. Yogesh</option>
+				<option value="103">Surgen-Dr. Muskan</option>
+				<option value="104">Dentist-Dr. Manisha</option>
+				<option value="105">Cardiologist-Dr. Rahul</option>
+				<option value="106">MD-Dr. Ashish</option>
+			</select></td>
+		</tr>	
+		<tr>
+			<td></td>
+			<td align="right"><button onclick="dataentry()">Submit</button></td>
+		</tr>
+	</table>
+</body>
+</html>
